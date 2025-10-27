@@ -28,8 +28,6 @@
         .spinning { animation: spin 3s linear infinite; }
         @keyframes pulse { 0% { transform: scale(1); opacity: 0.7; } 50% { transform: scale(1.05); opacity: 1; } 100% { transform: scale(1); opacity: 0.7; } }
         .footer-link-animate { animation: pulse 2s infinite ease-in-out; display: inline-block; }
-
-        /* === ANIMASI KELOPAK BUNGA (PETALS) === */
         @keyframes fall {
             0% { transform: translateY(-10vh) rotate(var(--start-rotate, 0deg)) translateX(0vw); opacity: 0.9; }
             100% { transform: translateY(110vh) rotate(calc(var(--start-rotate, 0deg) + 720deg)) translateX(var(--drift, 0vw)); opacity: 0.5; }
@@ -156,7 +154,6 @@
         /* === CSS KELOPAK DIUBAHSUAI UNTUK JS === */
         .petals-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; pointer-events: none; z-index: 5; }
         .petal { position: absolute; top: -10vh; background-color: var(--theme-secondary); border-radius: 10px 50% / 20px 50%; opacity: 0; animation: fall linear infinite; --start-rotate: 0deg; --drift: 0vw; }
-        /* ================================================== */
 
         /* === RESPONSIVE DESIGN === */
         @media (max-width: 650px) { .content-wrapper { max-width: none; width: 90%; } }
@@ -221,7 +218,7 @@
                 <h2 class="animate-on-scroll">Walimatul Urus</h2>
                 <h1 class="animate-on-scroll">Amrin Amsyar<br>&<br>Sabrina</h1>
                 <p class="date animate-on-scroll">Sabtu, 27 Disember 2025</p>
-                <p class="hashtag animate-on-scroll"></p>
+                <p class="hashtag animate-on-scroll">#AmrinSabrina</p>
             </div>
         </section>
 
@@ -238,7 +235,7 @@
 
             <section class="details">
                  <h3 class="animate-on-scroll"><i class="fa-solid fa-location-dot"></i>Lokasi</h3>
-                 <p class="animate-on-scroll" style="margin-top: 10px;"> di kediaman kami<br> No 112 Jalan Senimas 9,<br> 72000 Kuala Pilah,<br> Negeri Sembilan. </p>
+                 <p class="animate-on-scroll" style="margin-top: 10px;"> di kediaman kami<br> No 112 Jalan Senimas 9,<br> Taman Senimas, 72000 Kuala Pilah,<br> Negeri Sembilan. </p>
                  <div class="map-container animate-on-scroll">
                     <img src="map-placeholder.jpg" alt="Peta Lokasi Majlis" class="map-image">
                  </div>
@@ -300,7 +297,7 @@
 
     <div id="modal-calendar" class="modal"> <div class="modal-content"> <span class="modal-close" data-modal="modal-calendar">×</span> <h4>Tambah ke Kalendar</h4> <a href="#" target="_blank" class="modal-button google" id="btn-google-cal"><i class="fab fa-google"></i> Google Calendar</a> <a id="btn-ics-cal" href="#" download="walimatul-urus.ics" class="modal-button apple"><i class="fa-solid fa-calendar-arrow-down"></i> Apple / Outlook (.ics)</a> </div> </div>
     <div id="modal-hubungi" class="modal"> <div class="modal-content"> <span class="modal-close" data-modal="modal-hubungi">×</span> <h4>Hubungi</h4> <p style="text-align:center;">Hubungi wakil keluarga:</p> <strong style="display:block; text-align:center; margin-top:15px;">Za'aba (Bapa Pengantin)</strong> <a href="https://wa.me/60192995871" target="_blank" class="modal-button whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Za'aba</a> <a href="tel:+60192995871" class="modal-button telefon"><i class="fas fa-phone"></i> Telefon Za'aba</a> <strong style="display:block; text-align:center; margin-top:15px;">Haslina (Mak Pengantin)</strong> <a href="https://wa.me/60192995872" target="_blank" class="modal-button whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Haslina</a> <a href="tel:+60192995872" class="modal-button telefon"><i class="fas fa-phone"></i> Telefon Haslina</a> </div> </div>
-    <div id="modal-lokasi" class="modal"> <div class="modal-content"> <span class="modal-close" data-modal="modal-lokasi">×</span> <h4>Lokasi Majlis</h4> <p style="text-align:center;">No 112 Jalan Senimas 9, 72000 Kuala Pilah</p> <a href="http://googleusercontent.com/maps.google.com/4" target="_blank" class="modal-button"><i class="fab fa-google"></i> Google Maps</a> <a href="https://www.waze.com/en/live-map/directions/my/negeri-sembilan/kuala-pilah/112,-jalan-senimas-9?place=EkIxMTIsIEphbGFuIFNlbmltYXMgOSwgNzIwMDAgS3VhbGEgUGlsYWgsIE5lZ2VyaSBTZW1iaWxhbiwgTWFsYXlzaWEiMBIuChQKEgmburmncXLOMRFRW1JkPW9IghBwKhQKEgmtiNK3cXLOMRFSfjhCY268cg" target="_blank" class="modal-button waze"><i class="fab fa-waze"></i> Waze</a> </div> </div>
+    <div id="modal-lokasi" class="modal"> <div class="modal-content"> <span class="modal-close" data-modal="modal-lokasi">×</span> <h4>Lokasi Majlis</h4> <p style="text-align:center;">No 112 Jalan Senimas 9, Taman Senimas, 72000 Kuala Pilah</p> <a href="http://googleusercontent.com/maps.google.com/4" target="_blank" class="modal-button"><i class="fab fa-google"></i> Google Maps</a> <a href="https://www.waze.com/en/live-map/directions/my/negeri-sembilan/kuala-pilah/112,-jalan-senimas-9?place=EkIxMTIsIEphbGFuIFNlbmltYXMgOSwgNzIwMDAgS3VhbGEgUGlsYWgsIE5lZ2VyaSBTZW1iaWxhbiwgTWFsYXlzaWEiMBIuChQKEgmburmncXLOMRFRW1JkPW9IghBwKhQKEgmtiNK3cXLOMRFSfjhCY268cg" target="_blank" class="modal-button waze"><i class="fab fa-waze"></i> Waze</a> </div> </div>
     <div id="modal-rsvp" class="modal" style="align-items: flex-start; overflow-y: auto; padding-top: 20px;"> <div class="modal-content"> <span class="modal-close" data-modal="modal-rsvp">×</span> <h4>RSVP</h4> <p style="text-align:center;">Sila sahkan kehadiran anda.</p> <form class="rsvp-form" id="rsvpForm"> <div class="form-group"> <label>Status Kehadiran:</label> <div class="radio-group"> <label><input type="radio" id="hadir" name="guestStatus" value="Hadir" required> Hadir</label> <label><input type="radio" id="tidak-hadir" name="guestStatus" value="Tidak Hadir" required> Tidak Hadir</label> </div> </div> <div class="form-group"> <label for="guestName">Nama Penuh:</label> <input type="text" id="guestName" name="guestName" placeholder="Cth: Ahmad & Keluarga" required> </div> <div class="form-group"> <label for="guestPhone">No. Telefon:</label> <input type="tel" id="guestPhone" name="guestPhone" placeholder="Cth: 012-3456789" required> </div> <div id="hadir-fields" style="display: none;"> <div class="form-group"> <label>Jumlah Kehadiran:</label> <div class="radio-group pax-options"> <label><input type="radio" id="pax1" name="guestPax" value="1 Orang"> 1 Orang</label> <label><input type="radio"id="pax2" name="guestPax" value="2 Orang"> 2 Orang</label> <label><input type="radio" id="pax3" name="guestPax" value="3 Orang"> 3 Orang</label> </div> </div> </div> <div class="form-group"> <label for="guestUcapan">Ucapan:</label> <textarea id="guestUcapan" name="guestUcapan" rows="4" placeholder="Tinggalkan ucapan untuk kami..."></textarea> </div> <button type="submit" class="form-submit" id="submitButton">Hantar RSVP</button> </form> <div id="rsvp-message"></div> </div> </div>
 
     <script>
@@ -318,7 +315,32 @@
 
             // === [JS] LOGIK BUKA KAD (OVERLAY) === //
             const overlay = document.getElementById('myOverlay');
-            overlay.addEventListener('click', function() { document.body.classList.add('is-open'); document.body.classList.remove('no-scroll'); setTimeout(() => { try { music.play().then(() => { musicIcon.classList.add('fa-music'); musicToggle.classList.add('spinning'); }).catch(e => { musicIcon.classList.remove('fa-music'); musicIcon.classList.add('fa-volume-xmark'); musicToggle.classList.remove('spinning'); }); } catch (e) { console.error("Ralat main muzik:", e); } startAutoScroll(); createPetals(25); /* Panggil fungsi kelopak */ }, 2000); });
+            overlay.addEventListener('click', function() {
+                console.log("Overlay diklik. Membuka kad..."); // Log 1: Overlay diklik
+                document.body.classList.add('is-open'); document.body.classList.remove('no-scroll');
+
+                 // CUBA MAIN MUZIK SERTA MERTA
+                 try {
+                     console.log("Mencuba music.play() serta merta..."); // Log 2: Cuba main
+                     music.play().then(() => {
+                         console.log("Muzik berjaya dimainkan serta merta."); // Log 3a: Berjaya
+                         musicIcon.classList.add('fa-music'); musicToggle.classList.add('spinning');
+                     }).catch(e => {
+                         console.error("Gagal main muzik serta merta (mungkin autoplay disekat):", e); // Log 3b: Gagal
+                         musicIcon.classList.remove('fa-music'); musicIcon.classList.add('fa-volume-xmark'); musicToggle.classList.remove('spinning');
+                         // Jika gagal, butang toggle masih berfungsi seperti biasa
+                     });
+                 } catch (e) {
+                     console.error("Ralat semasa cuba music.play() serta merta:", e); // Log 3c: Ralat lain
+                 }
+
+                 // Teruskan dengan animasi & lain-lain selepas delay
+                setTimeout(() => {
+                    console.log("Timeout selesai. Memulakan auto-scroll & kelopak."); // Log 4: Timeout selesai
+                    startAutoScroll();
+                    createPetals(25); /* Panggil fungsi kelopak */
+                }, 1800); // Kurangkan sedikit delay jika perlu (padankan dgn transition cover)
+            });
             document.body.classList.add('no-scroll');
 
             // === [JS] LOGIK ANIMASI SEMASA SKROL === //
@@ -339,7 +361,7 @@
             closeButtons.forEach(b => b.onclick = () => closeModal(b.closest('.modal'))); window.onclick = function(e) { if (e.target.classList.contains('modal')) { closeModal(e.target); } }
 
             // === [JS] LOGIK PENJANA KALENDAR (.ics & Google) === //
-            const eventDetails = { title: "Walimatul Urus Amrin & Sabrina", description: "Majlis Perkahwinan Amrin & Sabrina. Kehadiran anda amat dialu-alukan.", location: "No 112 Jalan Senimas 9, 72000 Kuala Pilah, Negeri Sembilan.", startTime: "20251227T033000Z", endTime: "20251227T073000Z" };
+            const eventDetails = { title: "Walimatul Urus Amrin & Sabrina", description: "Majlis Perkahwinan Amrin & Sabrina. Kehadiran anda amat dialu-alukan.", location: "No 112 Jalan Senimas 9, Taman Senimas, 72000 Kuala Pilah, Negeri Sembilan.", startTime: "20251227T033000Z", endTime: "20251227T073000Z" };
             function generateICSFile() { const iC=["BEGIN:VCALENDAR","VERSION:2.0","BEGIN:VEVENT","URL:"+window.location.href,"DTSTART:"+eventDetails.startTime,"DTEND:"+eventDetails.endTime,"SUMMARY:"+eventDetails.title,"DESCRIPTION:"+eventDetails.description,"LOCATION:"+eventDetails.location,"END:VEVENT","END:VCALENDAR"].join("\n"); const iDU="data:text/calendar;charset=utf-8,"+encodeURIComponent(iC); document.getElementById('btn-ics-cal').href=iDU; }
             function generateGoogleCalLink() { const gL=new URL("https://www.google.com/calendar/render"); gL.searchParams.append("action","TEMPLATE"); gL.searchParams.append("text",eventDetails.title); gL.searchParams.append("dates",eventDetails.startTime+"/"+eventDetails.endTime); gL.searchParams.append("details",eventDetails.description); gL.searchParams.append("location",eventDetails.location); document.getElementById('btn-google-cal').href=gL.href; }
             generateICSFile(); generateGoogleCalLink();
@@ -371,7 +393,6 @@
                     container.appendChild(petal);
                 }
             }
-            // ============================================ //
 
             // === [JS] LOGIK MEMUATKAN UCAPAN === //
             function loadWishes() { const gWU = 'https://script.google.com/macros/s/AKfycbxgavI5g9FegAR1bGasdGb9D-q212uFHOQN0ixFo0xcbrK625VQp_fwcyfki189A_a1Nw/exec'; const wL = document.getElementById('wishesList'); if (!wL) return; wL.innerHTML = '<p style="text-align: center; color: #777;">Memuatkan ucapan...</p>'; fetch(gWU).then(r => { if (!r.ok) { return r.text().then(t => { throw new Error('Network response error: ' + t) }); } return r.json().catch(e => { console.warn("Gagal parse JSON, mungkin teks biasa?", e); return r.text(); }); }).then(d => { wL.innerHTML = ''; let wF = false; if (d && Array.isArray(d) && d.length > 0) { d.reverse().forEach(w => { const uT = w['Ucapan'] || 'Tiada ucapan'; const nP = w['Nama Penuh'] || 'Tetamu Tanpa Nama'; if (uT.trim() !== 'Tiada ucapan' && uT.trim() !== '') { wF = true; const wI = document.createElement('div'); wI.className = 'wish-item'; wI.innerHTML = `<p class="wish-text">"${uT}"</p><p class="wish-author">- ${nP} -</p>`; wL.appendChild(wI); } }); if (!wF) { wL.innerHTML = '<p style="text-align: center; color: #777;">Jadilah yang pertama mengucapkan!</p>'; } } else if (typeof d === 'string' && d.startsWith("Error:")) { console.error("Ralat dari Google Script:", d); wL.innerHTML = `<p style="text-align: center; color: red;">Gagal memuatkan ucapan. Semak URL Google Script GET.</p>`; } else { wL.innerHTML = '<p style="text-align: center; color: #777;">Jadilah yang pertama mengucapkan!</p>'; } }).catch(er => { console.error('Error loading wishes:', er); wL.innerHTML = `<p style="text-align: center; color: red;">Gagal memuatkan ucapan.</p>`; }); }
